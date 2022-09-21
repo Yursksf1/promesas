@@ -40,6 +40,10 @@ class Jugador(models.Model):
     def __str__(self):
         return "{} {} ".format(self.user.first_name, self.user.last_name)
 
+    def edad(self):
+        # todo: define function to get age
+        birhtday = '13'
+        return birhtday
 
 class Subscripcion(models.Model):
     pago = models.ForeignKey(Pago, on_delete=models.CASCADE)
