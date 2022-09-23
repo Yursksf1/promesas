@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'sport';
+    src: url("/static/fonts/Sport.ttf");
+}
+
+@font-face {
+    font-family: 'sporter';
+    src: url("/static/fonts/Sporter.ttf");
+}
+
+h1 {
+    font-family: sport;
+}
+
+
+.fnt-0 {
+    font-family: 'sporter';
+    text-align: center;
+    font-size: 2rem;
+}
+.fnt-1 {
+    font-family: 'sporter';
+    text-align: center;
+    font-size: 5rem;
+}
+
+.fnt-2 {
+    font-family: 'sport';
+    text-align: center;
+    font-size: 4rem;
+}
+
