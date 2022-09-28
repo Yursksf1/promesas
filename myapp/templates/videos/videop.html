@@ -1,19 +1,16 @@
 {% extends 'users/base.html' %}
 
 {% block style %}
- 
+
 {% endblock style %}
 
 {% block content %}
 <h1>Videos</h1>
 <p> Descripcion videos</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sWxhue1sMuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{% for item in videos %}
-       
-          <h2> {{  item.nombre }} </h2> 
+    {% for item in videos %}
+          <h2> {{  item.nombre }} </h2>
           <p>  {{  item.descripcion }} </p>
-           <a href="{{  item.video_link }}"> ver video </a> 
-      
+          <iframe width="560" height="315" src="{{  item.video_link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     {% endfor %}
 {% endblock content %}
