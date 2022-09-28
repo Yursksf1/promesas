@@ -12,7 +12,12 @@ h1 {
     font-family: sport;
 }
 
+.fnt-3 {
+    font-family: 'sporter';
+    text-align: center;
+    font-size: 3rem;
 
+}
 .fnt-0 {
     font-family: 'sporter';
     text-align: center;
@@ -28,5 +33,16 @@ h1 {
     font-family: 'sport';
     text-align: center;
     font-size: 4rem;
+}
+
+.fnt-4 {
+    font-family: 'sporter';
+    font-size: 2rem;
+}
+
+.color_1 {
+    color: #000000;
+    background: #e97a7a
+
 }
 

@@ -2,12 +2,12 @@
 
 {% block content %}
   <br>
-  <div class="alert alert-info">
-    <h2 class="fnt-1">Ingresar</h2>
+  <div class="alert color_1">
+    <h2 class="fnt-1">¡Ingreso a Promesas!</h2>
   </div>
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit" class="fnt-0" class="alert alert-info"  >Ingresar</button>
+    <button type="submit" type="button" class="fnt-0 alert alert-danger">Ingresar</button>
   </form>
 {% endblock content%}

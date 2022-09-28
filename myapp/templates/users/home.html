@@ -40,19 +40,19 @@
     
     <br>
     {% if user.is_authenticated %}
-        <div class="alert alert-success" role="alert">
+        <div class="alert alert-danger" role="alert">
             <h1>Bienvenido {{ user.username }}!</h1>
         </div>
         <div class="panel-group">
             <div class="row">
                 <div class="col-sm-6">
-                    <div class=" panel panel-info">
+                    <div class=" panel panel-danger">
                       <div class="panel-heading">Nombre</div>
                       <div class="panel-body">{{ user.first_name }}</div>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="panel panel-info">
+                    <div class="panel panel-danger">
                       <div class="panel-heading">Apellido</div>
                       <div class="panel-body">{{ user.last_name }}</div>
                     </div>
@@ -60,19 +60,19 @@
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="panel panel-info">
+                    <div class="panel panel-danger">
                       <div class="panel-heading">Genero</div>
                       <div class="panel-body">{{ user.jugador.genero }}</div>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="panel panel-info">
+                    <div class="panel panel-danger">
                       <div class="panel-heading">Altura</div>
                       <div class="panel-body">{{ user.jugador.altura }}</div>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="panel panel-info">
+                    <div class="panel panel-danger">
                       <div class="panel-heading">Edad</div>
                       <div class="panel-body">{{ user.jugador.edad }}</div>
                     </div>
@@ -82,7 +82,7 @@
 
         </div>
     {% else %}
-        <div class="alert alert-success" role="alert">
+        <div class="alert alert-danger" role="alert">
             <h1>Bienvenido al sistema de promesas!</h1>
         </div>
     {% endif %}

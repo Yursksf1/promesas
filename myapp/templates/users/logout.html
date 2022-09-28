@@ -2,11 +2,11 @@
 
 {% block content %}
     <br>
-    <div class="alert alert-info" >
-        <h2 class="fnt-1">logged out!</h2>
+    <div class="alert alert-danger" >
+        <h2 class="fnt-1">¡logged out!</h2>
     </div>
 
-    <h3>Login again?</h3>
-    <a href="{% url 'login' %}">---> Login</a> <br>
-    <a href="{% url 'home' %}"><--- Or go back to home.</a>
+    <h3 class="fnt-4">¿Ingresar de nuevo?</h3>
+    <a href="{% url 'login' %}">---> Ingresar a la pagina.</a> <br>
+    <a href="{% url 'home' %}"><--- Dirigirse al inicio.</a>
 {% endblock content %}
