@@ -29,5 +29,6 @@ urlpatterns = [
     path('history', TemplateView.as_view(template_name='public/history.html'), name='history'),
     path('quienes_somos', TemplateView.as_view(template_name='public/quienes_somos.html'), name='quienes_somos'),
     path('videos', user_views.videos, name='videos'),
+    path('categorias', TemplateView.as_view(template_name='public/categorias.html'), name='categorias'),
 
 ]
