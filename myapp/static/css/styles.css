@@ -46,3 +46,28 @@ h1 {
 
 }
 
+.w3-circle {
+        background: #2e792b;
+        color: white;
+        height: 116px;
+        width: 116px;
+        border-radius: 50%;
+        position:absolute;
+        margin-right:16px;
+        margin-bottom:16px;
+        font-size:36px;
+        text-align: center;
+}
+
+.w3-circle:hover{
+        background-image: url("https://www.clubpromesas.com/wp-content/uploads/2022/03/stiker-1.2-116x116.png");
+}
+
+
+.contenedor{
+  width:90px;
+  height:240px;
+  position:absolute;
+  right:0px;
+  bottom:0px;
+}
