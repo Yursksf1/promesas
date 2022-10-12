@@ -40,6 +40,12 @@ h1 {
     font-size: 2rem;
 }
 
+.fnt-5 {
+    font-family: 'sporter';
+    text-align: center;
+    font-size: 3rem;
+}
+
 .color_1 {
     color: #000000;
     background: #e97a7a
