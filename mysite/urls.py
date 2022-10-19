@@ -18,6 +18,8 @@ from django.urls import path
 from myapp import views as user_views
 from django.contrib.auth import views as auth_views
 from django.views.generic import TemplateView
+from django.conf.urls.static import static
+from django.conf import settings
 
 
 urlpatterns = [
@@ -30,5 +32,8 @@ urlpatterns = [
     path('quienes_somos', TemplateView.as_view(template_name='public/quienes_somos.html'), name='quienes_somos'),
     path('videos', user_views.videos, name='videos'),
     path('categorias', TemplateView.as_view(template_name='public/categorias.html'), name='categorias'),
+    path('categorias2', user_views.categorias2, name='categorias2'),
 
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from myapp.models import Video, Acudiente, Pago, Jugador, Equipo, Resultado, Subscripcion, Horario_partido, Entrenamientos_jugador, Resultado, Video
+from myapp.models import Categoria, Video, Acudiente, Pago, Jugador, Equipo, Resultado, Subscripcion, Horario_partido, Entrenamientos_jugador, Resultado, Video
 
 
 @admin.register(Acudiente)
@@ -36,4 +36,8 @@ class ResultadoAdmin(admin.ModelAdmin):
 
 @admin.register(Video)
 class VideoAdmin(admin.ModelAdmin):
+    pass
+
+@admin.register(Categoria)
+class CategoriaAdmin(admin.ModelAdmin):
     pass

@@ -96,3 +96,9 @@ class Video (models.Model):
     nombre = models.CharField(max_length=300)
     descripcion = models.TextField()
     video_link = models.URLField()
+
+class Categoria (models.Model):
+    nombre = models.CharField(max_length=300)
+    descripcion = models.TextField()
+    imagen = models.FileField(upload_to='media/')
+
