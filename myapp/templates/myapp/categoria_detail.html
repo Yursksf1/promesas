@@ -1,0 +1,12 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block style %}
+
+{% endblock style %}
+
+{% block content %}
+<h1>nombre de la categoria: {{ object.nombre }}</h1>
+<p> descipcion: </p>
+    <p>{{ object.descripcion }}</p>
+<img src="{{ object.imagen.url }}" alt="">
+{% endblock content %}

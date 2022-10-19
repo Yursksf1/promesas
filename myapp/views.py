@@ -7,6 +7,7 @@ from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 from .forms import SignupForm
 from .models import Jugador, Video , Categoria
+from django.views.generic.detail import DetailView
 
 def home(request):
     return render(request, 'users/home.html')
@@ -40,16 +41,19 @@ def signup(request):
 
 def videos(request):
     template = "videos/videop.html"
-    context = {} 
+    context = {}
     videos = Video.objects.all()
     context ["videos"] = videos
     return render(request, template, context)
 
 def categorias2(request):
     template = "public/categoria.html"
-    context = {} 
+    context = {}
     categorias = Categoria.objects.all()
     context ["categorias"] = categorias
     return render(request, template, context)
 
 
+
+class CategoriaDetailView(DetailView):
+    model = Categoria

@@ -33,7 +33,8 @@ urlpatterns = [
     path('videos', user_views.videos, name='videos'),
     path('categorias', TemplateView.as_view(template_name='public/categorias.html'), name='categorias'),
     path('categorias2', user_views.categorias2, name='categorias2'),
+    path('category/<pk>', user_views.CategoriaDetailView.as_view(), name='catedory-detail'),
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
