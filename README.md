@@ -40,3 +40,20 @@ git clone <repo>
 
 ## Correr el servidor
 	python manage.py runserver
+
+
+
+## Correr un proyecto ya instalado.
+
+ Entrar a la consola.
+ 
+	cd desktop 
+	cd proyecto_web
+	cd promesas
+
+## Activar entorno virutal 
+	myvenv\Scripts\activate
+
+## Correr el servidor
+	python manage.py runserver
+
