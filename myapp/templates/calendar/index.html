@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.js'></script>
+    <script>
+        var events = [
+                    {
+                        "title": " viaje ",
+                        "start": "2023-04-12T10:30:00",
+                        "end": "2023-04-14T11:30:00",
+                    },
+
+                    {
+                        "title": " bateria ",
+                        "start": "2023-04-26T15:00:00",
+                        "end": "2023-04-26T16:00:00",
+                    },
+
+                    {
+                        "title": " terapias ",
+                        "start": "2023-04-26T18:00:00",
+                        "end": "2023-04-26T20:00:00",
+                    },
+                ]
+                    
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,listMonth,timeGridWeek,listWeek,timeGridDay'
+                },
+          locale: 'es',
+          initialView: 'dayGridMonth', 
+          events : events,
+          eventColor: '#26B789',
+
+        });
+        calendar.render();
+      });
+
+    </script>
+  </head>
+  <body>
+    <div id='calendar'></div>
+  </body>
+</html> 
