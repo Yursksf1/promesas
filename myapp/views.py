@@ -10,7 +10,7 @@ from .models import Jugador, Video , Categoria
 from django.views.generic.detail import DetailView
 
 def home(request):
-    return render(request, 'users/home.html')
+    return render(request, 'public/home2.html')
 
 
 def signup(request):
